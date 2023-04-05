@@ -1452,11 +1452,6 @@ x2:addToggle("Target All", nil, function(value)
     end
 end)
 
-x2:addColorPicker("ColorPicker2", Color3.fromRGB(50, 50, 50), function("Color", value)
-game:GetService("Players").LocalPlayer.PlayerGui.Sprinting.Frame.Frame.BackgroundColor3 = Color3.fromRGB:WaitForChild(SXS)
-
-end)
-
 local theme = venyx:addPage("Credits", 5012544693)
 local x3 = theme:addSection("Credits To:")
 

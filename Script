@@ -369,16 +369,6 @@ x2:addButton("Better Roblox", function()
 loadstring(game:HttpGet("https://eternityhub.xyz/BetterRoblox/Loader"))()
 end)
 
-x2:addButton("Rainbow Sprinting Bar", function()
-local speed = 10
-while true do
-	for i = 0,1,0.001*speed do
-		game:GetService("Players").LocalPlayer.PlayerGui.Sprinting.Frame.Frame.BackgroundColor3 = Color3.fromHSV(i,1,1)
-		wait()
-	end
-end
-end)
-
 x2:addButton("Chat Translator To English", function()
 Notify('Chat Translator','Activating wait...',4)
 --[[
@@ -1452,8 +1442,18 @@ x2:addToggle("Target All", nil, function(value)
     end
 end)
 
+x2:addButton("Rainbow Sprinting Bar", function()
+local speed = 10
+while true do
+	for i = 0,1,0.001*speed do
+		game:GetService("Players").LocalPlayer.PlayerGui.Sprinting.Frame.Frame.BackgroundColor3 = Color3.fromHSV(i,1,1)
+		wait()
+	end
+end
+end)
+
 x2:addButton("Rainbow Shoots", function()
-local speed = 15
+local speed = 77
 while true do
 	for i = 0,1,0.001*speed do
 		game:GetService("ReplicatedStorage"):WaitForChild("Revolver Bullet").Color = Color3.fromHSV(i,1,1)

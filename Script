@@ -339,17 +339,16 @@ end
 end)
 end)
 
-x2:addButton("Crash", function()
+x2:addButton("Crash (Fixed!)", function()
          for i,v in next,plr.Backpack:GetChildren() do
          if v.Name == 'C4' or 'Grenade' and v:FindFirstChild'RemoteEvent' then
                 v.Parent = plr.Character
                 for i=1,2 do
-                mouse1click(mouse.Hit)
-                v.RemoteEvent:FireServer(mouse.Hit.LookVector)
+                v.RemoteEvent:FireServer(LookVector)
                 v.Parent = plr.Backpack
-            end
-      end
- end
+               end
+          end
+     end
 end)
 
 x2:addButton("Nuke", function()

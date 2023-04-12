@@ -30,7 +30,7 @@ local rs = game:GetService'RunService'
 
 local Player = game:GetService("Players").LocalPlayer
 local Mouse = Player:GetMouse()
-
+--
 local function GetChar()
     local Char = Player.Character or Player.CharacterAdded:Wait()
     return Char
